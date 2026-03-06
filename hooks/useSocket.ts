@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { io } from "socket.io-client";
+import io from "socket.io-client";
 
-const socket = io("http://localhost:3001");
+const socket = io("http://10.241.187.206:3001");
 
 export const useSocket = () => {
   const [typing, setTyping] = useState(false);
